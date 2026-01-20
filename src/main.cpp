@@ -4,15 +4,13 @@
 #include "rlcpp-core.hpp"
 #include "rlcpp-text.hpp"
 
-#define RL_TEXT_WRAPPER
-
 constexpr int WindowWidth = 1280;
 constexpr int WindowHeight = 800;
 constexpr Color BackgroundColorDefault = WHITE;
 
 int main() {
-  raylib::SetConfigFlags({FLAG_WINDOW_HIGHDPI, FLAG_VSYNC_HINT});
-  raylib::InitWindow(WindowWidth, WindowHeight, "Hello Raylib");
+  rlcore::SetConfigFlags({FLAG_WINDOW_HIGHDPI, FLAG_VSYNC_HINT});
+  rlcore::InitWindow(WindowWidth, WindowHeight, "Hello Raylib");
   SearchAndSetResourceDir("resources");
 
   while (!WindowShouldClose()) {
