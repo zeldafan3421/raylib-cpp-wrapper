@@ -7,6 +7,7 @@
 #include <initializer_list>
 #include <raylib.h>
 #include <raymath.h>
+#include <rlcpp-text.hpp>
 #include <string_view>
 #include <vector>
 
@@ -64,5 +65,4 @@ inline void ClearWindowState(const ConfigFlags &flags) {
 inline bool IsWindowState(const ConfigFlags &flags) {
   return ::IsWindowState(flags.to_integer());
 }
-
 } // namespace CPPRL

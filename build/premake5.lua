@@ -207,7 +207,7 @@ includedirs({ "../include" })
 links({ "raylib" })
 
 cdialect("C17")
-cppdialect("C++latest")
+cppdialect("C++23")
 
 includedirs({ raylib_dir .. "/src" })
 
